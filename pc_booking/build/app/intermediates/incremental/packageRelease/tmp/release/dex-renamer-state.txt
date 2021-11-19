@@ -1,0 +1,4 @@
+#Sat Nov 20 01:19:32 YEKT 2021
+base.0=D\:\\Programming\\pc_booking\\build\\app\\intermediates\\dex\\release\\minifyReleaseWithR8\\classes.dex
+renamed.0=classes.dex
+path.0=classes.dex
