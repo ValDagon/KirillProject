@@ -1,6 +1,7 @@
 import 'package:blurrycontainer/blurrycontainer.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:pc_booking/choose_and_pay.dart';
 
 class CoffeeDetailsPage extends StatelessWidget {
   const CoffeeDetailsPage({Key key}) : super(key: key);
@@ -229,7 +230,7 @@ class CoffeeDetailsPage extends StatelessWidget {
                               decoration: InputDecoration(
                                 border: OutlineInputBorder(
                                     borderRadius: BorderRadius.circular(10)),
-                                fillColor: Colors.white70,
+                                fillColor: Colors.blueGrey,
                                 filled: true,
                               ),
                             ),
@@ -277,7 +278,12 @@ class CoffeeDetailsPage extends StatelessWidget {
                             child: RaisedButton(
                               shape: RoundedRectangleBorder(
                                   borderRadius: BorderRadius.circular(20)),
-                              onPressed: () {},
+                              onPressed: () {
+                                Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) => ChooseAndPay()));
+                              },
                               color: Colors.lightBlue,
                               child: Text(
                                 "Оплатить",
